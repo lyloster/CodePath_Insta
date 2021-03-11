@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 ParseUser.logOut();
                 ParseUser currentUser = ParseUser.getCurrentUser();
-                goLoginActivity();
+                goSignupActivity();
             }
         });
 
@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void goLoginActivity() {
-        Intent i = new Intent(this, LoginActivity.class);
+    private void goSignupActivity() {
+        Intent i = new Intent(this, SignupActivity.class);
         startActivity(i);
         finish();
     }
